@@ -5,7 +5,6 @@ This project is landing page when people can signup for my newsletter.
 	
 ## Technologies
 Project is created with:
-* Javascript
 * Node.js
 * Express
 * REST API
