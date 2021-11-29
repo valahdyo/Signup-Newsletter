@@ -1,3 +1,4 @@
+require('dotenv').config()
 const express = require("express");
 const https = require("https");
 const app = express();
@@ -23,10 +24,10 @@ app.post("/", function(req, res){
     }]}
 
    const jsonData = JSON.stringify(data);
-   const url = "https://us5.api.mailchimp.com/3.0//lists/a8695fd95e"
+   const url = `https://us5.api.mailchimp.com/3.0//lists/${process.env.KEY}`
    const options = {
     method : "POST",
-    auth: "vasus:c142509aa8732af0ba115157eb4aaf27-us5"
+    auth: `vasus:${process.env.SERVER}`
    }
    const request = https.request(url, options, function(response){
        console.log(response.statusCode)
