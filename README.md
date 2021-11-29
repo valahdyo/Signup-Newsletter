@@ -8,8 +8,7 @@ Project is created with:
 * Javascript
 * Node.js
 * Express
-* Mongoose
-* OAuth (Passport.js)
+* REST API
 	
 ## Setup
 To run this project, install it locally using npm:
